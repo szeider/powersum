@@ -32,3 +32,6 @@ venv/
 # Output files (uncomment if needed)
 # *.sage
 # *.adf
+
+# Search progress files
+search_progress_*.json

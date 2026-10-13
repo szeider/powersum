@@ -7,7 +7,7 @@ Example: uv run find_decomposition.py 238115 4
 """
 
 # /// script
-# requires-python = ">=3.11"
+# requires-python = ">=3.11,<3.15"
 # dependencies = [
 #   "ortools",
 # ]

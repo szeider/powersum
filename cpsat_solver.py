@@ -6,7 +6,7 @@ Example: uv run cpsat_solver.py 238117 4
 """
 
 # /// script
-# requires-python = ">=3.11"
+# requires-python = ">=3.11,<3.15"
 # dependencies = [
 #   "ortools",
 # ]

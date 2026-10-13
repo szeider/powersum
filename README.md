@@ -33,7 +33,7 @@
 
   ## Tools
 
-  Four Python scripts using [CP-SAT](https://developers.google.com/optimization/cp/cp_solver) constraint solver:
+  Five Python scripts using [CP-SAT](https://developers.google.com/optimization/cp/cp_solver) constraint solver:
 
   - `cpsat_solver.py` - Test if α(n) ≤ k
   - `find_decomposition.py` - Find explicit sets and output to ADF format
@@ -53,14 +53,14 @@
 
   # Find decomposition
   uv run find_decomposition.py 13 3
-  # Output: Creates n_13_k3.adf with the sets
+  # Output: Creates n_13_k3.adf with the sets (overwrites the committed n_13_k3.adf)
 
   # Search a range
   uv run search_sequential.py --k 3 --start 400 --end 500
   # Output: Found n=419
   ```
 
-  Python 3.11+ required. No other dependencies - [uv](https://docs.astral.sh/uv/) handles everything.
+  Python 3.11 to 3.14 required (ortools has no 3.15 wheels yet). No other dependencies - [uv](https://docs.astral.sh/uv/) handles everything.
 
   ## ADF Format
 
@@ -74,4 +74,4 @@
   s 3 4 5 0          # Set 3: {4, 5}
   ```
 
-  Verify with: `python adf_verifier.py file.adf`
+  Verify with: `uv run adf_verifier.py file.adf`

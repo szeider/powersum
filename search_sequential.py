@@ -7,7 +7,7 @@ Example: uv run search_sequential.py --k 4 --start 1 --end 65535
 """
 
 # /// script
-# requires-python = ">=3.11"
+# requires-python = ">=3.11,<3.15"
 # dependencies = [
 #   "ortools",
 # ]
